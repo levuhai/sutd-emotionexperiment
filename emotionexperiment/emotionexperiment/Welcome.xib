@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6751"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="BaseView">
+            <connections>
+                <outlet property="mainText" destination="0pF-Pq-Riz" id="RA9-mK-O5q"/>
+                <outlet property="subText" destination="caR-5v-IpV" id="lel-Xe-JCe"/>
+                <outlet property="view" destination="uZk-3q-AqV" id="Tdx-kT-yvL"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <view id="uZk-3q-AqV" customClass="MouseEventView">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0pF-Pq-Riz">
+                    <rect key="frame" x="191" y="184" width="99" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Welcome Text" id="SSB-8U-N2U">
+                        <font key="font" metaFont="systemBold"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="caR-5v-IpV">
+                    <rect key="frame" x="212" y="42" width="56" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Sub text" id="w4q-Hc-jEh">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JuA-GI-hAY">
+                    <rect key="frame" x="29" y="263" width="50" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Status" id="qDM-dt-eP8">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HXj-e0-Q0m">
+                    <rect key="frame" x="93" y="263" width="121" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Connected" id="sXe-Go-aIh">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="caR-5v-IpV" secondAttribute="centerX" id="9jB-uk-pv6"/>
+                <constraint firstAttribute="centerY" secondItem="caR-5v-IpV" secondAttribute="centerY" multiplier="0.6" id="UAA-c8-lmJ"/>
+                <constraint firstAttribute="centerY" secondItem="0pF-Pq-Riz" secondAttribute="centerY" multiplier="1.4" id="ge2-o4-VJ2"/>
+                <constraint firstAttribute="centerX" secondItem="0pF-Pq-Riz" secondAttribute="centerX" id="jYD-J5-RSc"/>
+            </constraints>
+            <connections>
+                <outlet property="delegate" destination="-2" id="EL0-By-SYh"/>
+            </connections>
+        </view>
+    </objects>
+</document>

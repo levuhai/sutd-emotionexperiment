@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="BaseView">
+            <connections>
+                <outlet property="progressbar" destination="SCA-aW-a2q" id="kc1-kw-rYg"/>
+                <outlet property="subText" destination="x2D-r2-MwN" id="TBJ-7S-aq6"/>
+                <outlet property="view" destination="3yd-xq-dtH" id="dQQ-W9-Wh2"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <view id="3yd-xq-dtH" customClass="MouseEventView">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="x2D-r2-MwN">
+                    <rect key="frame" x="212" y="42" width="56" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Sub text" id="V9Q-3u-VFx">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="v7N-Ov-bhe">
+                    <rect key="frame" x="191" y="89" width="98" height="173"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="+" id="Xqn-wT-i3e">
+                        <font key="font" size="150" name="HelveticaNeue-UltraLight"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="SCA-aW-a2q" customClass="ProgressView">
+                    <rect key="frame" x="0.0" y="295" width="480" height="5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="7oT-hv-K5F"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="v7N-Ov-bhe" secondAttribute="centerX" id="2bo-Tg-uNy"/>
+                <constraint firstAttribute="centerX" secondItem="x2D-r2-MwN" secondAttribute="centerX" id="9UK-hy-7hi"/>
+                <constraint firstAttribute="trailing" secondItem="SCA-aW-a2q" secondAttribute="trailing" id="Ki3-bK-ubN"/>
+                <constraint firstAttribute="centerY" secondItem="x2D-r2-MwN" secondAttribute="centerY" multiplier="0.6" id="ZMp-M6-Ejw"/>
+                <constraint firstItem="SCA-aW-a2q" firstAttribute="top" secondItem="3yd-xq-dtH" secondAttribute="top" id="gCM-VA-3KF"/>
+                <constraint firstAttribute="centerY" secondItem="v7N-Ov-bhe" secondAttribute="centerY" multiplier="1.2" id="lKf-2L-vPk"/>
+                <constraint firstItem="SCA-aW-a2q" firstAttribute="leading" secondItem="3yd-xq-dtH" secondAttribute="leading" id="s6a-Bj-dcZ"/>
+            </constraints>
+            <connections>
+                <outlet property="delegate" destination="-2" id="KcX-MV-ayq"/>
+            </connections>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="BaseView">
+            <connections>
+                <outlet property="mainText" destination="byy-Ky-SsU" id="lPh-6p-ZQy"/>
+                <outlet property="progressbar" destination="umG-PR-t9r" id="zo4-by-xd3"/>
+                <outlet property="subText" destination="31l-d8-8uZ" id="r96-pe-Ez5"/>
+                <outlet property="view" destination="XYu-qO-gQI" id="AVX-b3-Wli"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <view canDrawConcurrently="YES" id="XYu-qO-gQI" customClass="MouseEventView">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="byy-Ky-SsU">
+                    <rect key="frame" x="98" y="184" width="284" height="17"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="justified" title="Content Text" id="5kR-q5-UFC">
+                        <font key="font" metaFont="systemBold"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="31l-d8-8uZ">
+                    <rect key="frame" x="212" y="42" width="56" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Sub text" id="0wX-RX-pL3">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <customView canDrawConcurrently="YES" translatesAutoresizingMaskIntoConstraints="NO" id="umG-PR-t9r" customClass="ProgressView">
+                    <rect key="frame" x="0.0" y="290" width="480" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="wMx-b9-dVM"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="umG-PR-t9r" secondAttribute="trailing" id="BvB-zp-yLo"/>
+                <constraint firstItem="byy-Ky-SsU" firstAttribute="leading" secondItem="XYu-qO-gQI" secondAttribute="leading" constant="100" id="HdN-Cc-W8u"/>
+                <constraint firstAttribute="trailing" secondItem="byy-Ky-SsU" secondAttribute="trailing" constant="100" id="IPb-2o-wiF"/>
+                <constraint firstItem="umG-PR-t9r" firstAttribute="top" secondItem="XYu-qO-gQI" secondAttribute="top" id="ULt-ab-78h"/>
+                <constraint firstItem="umG-PR-t9r" firstAttribute="leading" secondItem="XYu-qO-gQI" secondAttribute="leading" id="WWh-oP-y7m"/>
+                <constraint firstAttribute="centerX" secondItem="byy-Ky-SsU" secondAttribute="centerX" id="bx1-c6-lhm"/>
+                <constraint firstAttribute="centerY" secondItem="31l-d8-8uZ" secondAttribute="centerY" multiplier="0.6" id="iuz-Mu-MQI"/>
+                <constraint firstAttribute="centerY" secondItem="byy-Ky-SsU" secondAttribute="centerY" multiplier="1.4" id="k2e-0i-xHv"/>
+                <constraint firstAttribute="centerX" secondItem="31l-d8-8uZ" secondAttribute="centerX" id="nHN-ck-QQR"/>
+            </constraints>
+            <connections>
+                <outlet property="delegate" destination="-2" id="Tl8-sa-erG"/>
+            </connections>
+            <point key="canvasLocation" x="226" y="524"/>
+        </view>
+    </objects>
+</document>

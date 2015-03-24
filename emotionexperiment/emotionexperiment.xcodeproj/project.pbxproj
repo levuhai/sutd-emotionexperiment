@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7354D4E1AC1267700A76853 /* libOsc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7354D3F1AC1267700A76853 /* libOsc.a */; };
+		D7354D4F1AC1267700A76853 /* liboscpack.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7354D401AC1267700A76853 /* liboscpack.dylib */; };
+		D7354D501AC1267700A76853 /* liboscpack.dylib.1.0.2 in Frameworks */ = {isa = PBXBuildFile; fileRef = D7354D411AC1267700A76853 /* liboscpack.dylib.1.0.2 */; };
+		D7354D511AC1267700A76853 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = D7354D421AC1267700A76853 /* LICENSE.txt */; };
+		D7354D521AC1267700A76853 /* ofxOscBundle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D7354D461AC1267700A76853 /* ofxOscBundle.cpp */; };
+		D7354D531AC1267700A76853 /* ofxOscMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D7354D481AC1267700A76853 /* ofxOscMessage.cpp */; };
+		D7354D541AC1267700A76853 /* ofxOscReceiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D7354D4A1AC1267700A76853 /* ofxOscReceiver.cpp */; };
+		D7354D551AC1267700A76853 /* ofxOscSender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D7354D4C1AC1267700A76853 /* ofxOscSender.cpp */; };
+		D786690C1A9ABE6500FF9D31 /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = D786690B1A9ABE6500FF9D31 /* ProgressView.m */; };
+		D7A30C371A947F0000074D12 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A30C361A947F0000074D12 /* AppDelegate.m */; };
+		D7A30C391A947F0000074D12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A30C381A947F0000074D12 /* main.m */; };
+		D7A30C3B1A947F0000074D12 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7A30C3A1A947F0000074D12 /* Images.xcassets */; };
+		D7A30C3E1A947F0000074D12 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7A30C3C1A947F0000074D12 /* MainMenu.xib */; };
+		D7A30C4A1A947F0000074D12 /* emotionexperimentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A30C491A947F0000074D12 /* emotionexperimentTests.m */; };
+		D7A30C561A947F4D00074D12 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A30C551A947F4D00074D12 /* BaseView.m */; };
+		D7A30C5D1A9480DF00074D12 /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A30C5A1A9480DF00074D12 /* NSMutableArray+Shuffling.m */; };
+		D7A30C5E1A9480DF00074D12 /* NSTextField+AnimatedSetString.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A30C5C1A9480DF00074D12 /* NSTextField+AnimatedSetString.m */; };
+		D7A30C621A94810C00074D12 /* AppService.mm in Sources */ = {isa = PBXBuildFile; fileRef = D7A30C611A94810C00074D12 /* AppService.mm */; };
+		D7A30C651A94818A00074D12 /* Screens.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7A30C641A94818A00074D12 /* Screens.plist */; };
+		D7A30C671A94819500074D12 /* Welcome.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7A30C661A94819500074D12 /* Welcome.xib */; };
+		D7A30C711A94837500074D12 /* Content.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7A30C6E1A94837500074D12 /* Content.xib */; };
+		D7A30C721A94837500074D12 /* Cross.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7A30C6F1A94837500074D12 /* Cross.xib */; };
+		D7A30C731A94837500074D12 /* Rating.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7A30C701A94837500074D12 /* Rating.xib */; };
+		D7A30C791A9486E500074D12 /* NSView+NibLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A30C781A9486E500074D12 /* NSView+NibLoading.m */; };
+		D7A30C861A94A23900074D12 /* MouseEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A30C851A94A23900074D12 /* MouseEventView.m */; };
+		D7EE2C731AB1DBDC00595842 /* libedk.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7EE2C721AB1DBDC00595842 /* libedk.1.0.0.dylib */; };
+		D7EE2C791AB1DD4000595842 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7EE2C781AB1DD4000595842 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7A30C441A947F0000074D12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7A30C281A947F0000074D12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7A30C2F1A947F0000074D12;
+			remoteInfo = emotionexperiment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D7354D301AC1267600A76853 /* IpEndpointName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpEndpointName.h; sourceTree = "<group>"; };
+		D7354D311AC1267700A76853 /* NetworkingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingUtils.h; sourceTree = "<group>"; };
+		D7354D321AC1267700A76853 /* PacketListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketListener.h; sourceTree = "<group>"; };
+		D7354D331AC1267700A76853 /* TimerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerListener.h; sourceTree = "<group>"; };
+		D7354D341AC1267700A76853 /* UdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UdpSocket.h; sourceTree = "<group>"; };
+		D7354D361AC1267700A76853 /* MessageMappingOscPacketListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageMappingOscPacketListener.h; sourceTree = "<group>"; };
+		D7354D371AC1267700A76853 /* OscException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscException.h; sourceTree = "<group>"; };
+		D7354D381AC1267700A76853 /* OscHostEndianness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscHostEndianness.h; sourceTree = "<group>"; };
+		D7354D391AC1267700A76853 /* OscOutboundPacketStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscOutboundPacketStream.h; sourceTree = "<group>"; };
+		D7354D3A1AC1267700A76853 /* OscPacketListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscPacketListener.h; sourceTree = "<group>"; };
+		D7354D3B1AC1267700A76853 /* OscPrintReceivedElements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscPrintReceivedElements.h; sourceTree = "<group>"; };
+		D7354D3C1AC1267700A76853 /* OscReceivedElements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscReceivedElements.h; sourceTree = "<group>"; };
+		D7354D3D1AC1267700A76853 /* OscTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscTypes.h; sourceTree = "<group>"; };
+		D7354D3F1AC1267700A76853 /* libOsc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOsc.a; sourceTree = "<group>"; };
+		D7354D401AC1267700A76853 /* liboscpack.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = liboscpack.dylib; sourceTree = "<group>"; };
+		D7354D411AC1267700A76853 /* liboscpack.dylib.1.0.2 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = liboscpack.dylib.1.0.2; sourceTree = "<group>"; };
+		D7354D421AC1267700A76853 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		D7354D441AC1267700A76853 /* ofxOsc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOsc.h; sourceTree = "<group>"; };
+		D7354D451AC1267700A76853 /* ofxOscArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOscArg.h; sourceTree = "<group>"; };
+		D7354D461AC1267700A76853 /* ofxOscBundle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxOscBundle.cpp; sourceTree = "<group>"; };
+		D7354D471AC1267700A76853 /* ofxOscBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOscBundle.h; sourceTree = "<group>"; };
+		D7354D481AC1267700A76853 /* ofxOscMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxOscMessage.cpp; sourceTree = "<group>"; };
+		D7354D491AC1267700A76853 /* ofxOscMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOscMessage.h; sourceTree = "<group>"; };
+		D7354D4A1AC1267700A76853 /* ofxOscReceiver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxOscReceiver.cpp; sourceTree = "<group>"; };
+		D7354D4B1AC1267700A76853 /* ofxOscReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOscReceiver.h; sourceTree = "<group>"; };
+		D7354D4C1AC1267700A76853 /* ofxOscSender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxOscSender.cpp; sourceTree = "<group>"; };
+		D7354D4D1AC1267700A76853 /* ofxOscSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOscSender.h; sourceTree = "<group>"; };
+		D786690A1A9ABE6500FF9D31 /* ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
+		D786690B1A9ABE6500FF9D31 /* ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
+		D7A30C301A947F0000074D12 /* emotionexperiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = emotionexperiment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7A30C341A947F0000074D12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7A30C351A947F0000074D12 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D7A30C361A947F0000074D12 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D7A30C381A947F0000074D12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D7A30C3A1A947F0000074D12 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D7A30C3D1A947F0000074D12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D7A30C431A947F0000074D12 /* emotionexperimentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = emotionexperimentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7A30C481A947F0000074D12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7A30C491A947F0000074D12 /* emotionexperimentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = emotionexperimentTests.m; sourceTree = "<group>"; };
+		D7A30C541A947F4D00074D12 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		D7A30C551A947F4D00074D12 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		D7A30C571A9480A300074D12 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		D7A30C591A9480DF00074D12 /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
+		D7A30C5A1A9480DF00074D12 /* NSMutableArray+Shuffling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Shuffling.m"; sourceTree = "<group>"; };
+		D7A30C5B1A9480DF00074D12 /* NSTextField+AnimatedSetString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextField+AnimatedSetString.h"; sourceTree = "<group>"; };
+		D7A30C5C1A9480DF00074D12 /* NSTextField+AnimatedSetString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextField+AnimatedSetString.m"; sourceTree = "<group>"; };
+		D7A30C601A94810C00074D12 /* AppService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppService.h; sourceTree = "<group>"; };
+		D7A30C611A94810C00074D12 /* AppService.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppService.mm; sourceTree = "<group>"; };
+		D7A30C641A94818A00074D12 /* Screens.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Screens.plist; sourceTree = "<group>"; };
+		D7A30C661A94819500074D12 /* Welcome.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Welcome.xib; sourceTree = "<group>"; };
+		D7A30C6E1A94837500074D12 /* Content.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Content.xib; sourceTree = "<group>"; };
+		D7A30C6F1A94837500074D12 /* Cross.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cross.xib; sourceTree = "<group>"; };
+		D7A30C701A94837500074D12 /* Rating.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Rating.xib; sourceTree = "<group>"; };
+		D7A30C771A9486E500074D12 /* NSView+NibLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+NibLoading.h"; sourceTree = "<group>"; };
+		D7A30C781A9486E500074D12 /* NSView+NibLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+NibLoading.m"; sourceTree = "<group>"; };
+		D7A30C841A94A23900074D12 /* MouseEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MouseEventView.h; sourceTree = "<group>"; };
+		D7A30C851A94A23900074D12 /* MouseEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MouseEventView.m; sourceTree = "<group>"; };
+		D7EE2C721AB1DBDC00595842 /* libedk.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libedk.1.0.0.dylib; path = libs/libedk.1.0.0.dylib; sourceTree = "<group>"; };
+		D7EE2C781AB1DD4000595842 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7A30C2D1A947F0000074D12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7EE2C791AB1DD4000595842 /* Foundation.framework in Frameworks */,
+				D7354D4F1AC1267700A76853 /* liboscpack.dylib in Frameworks */,
+				D7EE2C731AB1DBDC00595842 /* libedk.1.0.0.dylib in Frameworks */,
+				D7354D4E1AC1267700A76853 /* libOsc.a in Frameworks */,
+				D7354D501AC1267700A76853 /* liboscpack.dylib.1.0.2 in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7A30C401A947F0000074D12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7354D2B1AC1267600A76853 /* ofxOsc */ = {
+			isa = PBXGroup;
+			children = (
+				D7354D2C1AC1267600A76853 /* libs */,
+				D7354D421AC1267700A76853 /* LICENSE.txt */,
+				D7354D431AC1267700A76853 /* src */,
+			);
+			path = ofxOsc;
+			sourceTree = "<group>";
+		};
+		D7354D2C1AC1267600A76853 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				D7354D2D1AC1267600A76853 /* oscpack */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		D7354D2D1AC1267600A76853 /* oscpack */ = {
+			isa = PBXGroup;
+			children = (
+				D7354D2E1AC1267600A76853 /* include */,
+				D7354D3E1AC1267700A76853 /* lib */,
+			);
+			path = oscpack;
+			sourceTree = "<group>";
+		};
+		D7354D2E1AC1267600A76853 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D7354D2F1AC1267600A76853 /* ip */,
+				D7354D351AC1267700A76853 /* osc */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		D7354D2F1AC1267600A76853 /* ip */ = {
+			isa = PBXGroup;
+			children = (
+				D7354D301AC1267600A76853 /* IpEndpointName.h */,
+				D7354D311AC1267700A76853 /* NetworkingUtils.h */,
+				D7354D321AC1267700A76853 /* PacketListener.h */,
+				D7354D331AC1267700A76853 /* TimerListener.h */,
+				D7354D341AC1267700A76853 /* UdpSocket.h */,
+			);
+			path = ip;
+			sourceTree = "<group>";
+		};
+		D7354D351AC1267700A76853 /* osc */ = {
+			isa = PBXGroup;
+			children = (
+				D7354D361AC1267700A76853 /* MessageMappingOscPacketListener.h */,
+				D7354D371AC1267700A76853 /* OscException.h */,
+				D7354D381AC1267700A76853 /* OscHostEndianness.h */,
+				D7354D391AC1267700A76853 /* OscOutboundPacketStream.h */,
+				D7354D3A1AC1267700A76853 /* OscPacketListener.h */,
+				D7354D3B1AC1267700A76853 /* OscPrintReceivedElements.h */,
+				D7354D3C1AC1267700A76853 /* OscReceivedElements.h */,
+				D7354D3D1AC1267700A76853 /* OscTypes.h */,
+			);
+			path = osc;
+			sourceTree = "<group>";
+		};
+		D7354D3E1AC1267700A76853 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				D7354D3F1AC1267700A76853 /* libOsc.a */,
+				D7354D401AC1267700A76853 /* liboscpack.dylib */,
+				D7354D411AC1267700A76853 /* liboscpack.dylib.1.0.2 */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		D7354D431AC1267700A76853 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D7354D441AC1267700A76853 /* ofxOsc.h */,
+				D7354D451AC1267700A76853 /* ofxOscArg.h */,
+				D7354D461AC1267700A76853 /* ofxOscBundle.cpp */,
+				D7354D471AC1267700A76853 /* ofxOscBundle.h */,
+				D7354D481AC1267700A76853 /* ofxOscMessage.cpp */,
+				D7354D491AC1267700A76853 /* ofxOscMessage.h */,
+				D7354D4A1AC1267700A76853 /* ofxOscReceiver.cpp */,
+				D7354D4B1AC1267700A76853 /* ofxOscReceiver.h */,
+				D7354D4C1AC1267700A76853 /* ofxOscSender.cpp */,
+				D7354D4D1AC1267700A76853 /* ofxOscSender.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		D7A30C271A947F0000074D12 = {
+			isa = PBXGroup;
+			children = (
+				D7EE2C7A1AB1DD5000595842 /* Frameworks */,
+				D7A30C321A947F0000074D12 /* emotionexperiment */,
+				D7A30C461A947F0000074D12 /* emotionexperimentTests */,
+				D7A30C311A947F0000074D12 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7A30C311A947F0000074D12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7A30C301A947F0000074D12 /* emotionexperiment.app */,
+				D7A30C431A947F0000074D12 /* emotionexperimentTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7A30C321A947F0000074D12 /* emotionexperiment */ = {
+			isa = PBXGroup;
+			children = (
+				D7A30C581A9480CA00074D12 /* Categories */,
+				D7A30C5F1A9480FC00074D12 /* Servies */,
+				D7A30C531A947F0C00074D12 /* Views */,
+				D7A30C351A947F0000074D12 /* AppDelegate.h */,
+				D7A30C361A947F0000074D12 /* AppDelegate.m */,
+				D7A30C3A1A947F0000074D12 /* Images.xcassets */,
+				D7A30C3C1A947F0000074D12 /* MainMenu.xib */,
+				D7A30C331A947F0000074D12 /* Supporting Files */,
+			);
+			path = emotionexperiment;
+			sourceTree = "<group>";
+		};
+		D7A30C331A947F0000074D12 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7A30C641A94818A00074D12 /* Screens.plist */,
+				D7A30C341A947F0000074D12 /* Info.plist */,
+				D7A30C381A947F0000074D12 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7A30C461A947F0000074D12 /* emotionexperimentTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7A30C491A947F0000074D12 /* emotionexperimentTests.m */,
+				D7A30C471A947F0000074D12 /* Supporting Files */,
+			);
+			path = emotionexperimentTests;
+			sourceTree = "<group>";
+		};
+		D7A30C471A947F0000074D12 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7A30C481A947F0000074D12 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7A30C531A947F0C00074D12 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D7A30C631A94816700074D12 /* Nibs */,
+				D7A30C541A947F4D00074D12 /* BaseView.h */,
+				D7A30C551A947F4D00074D12 /* BaseView.m */,
+				D786690A1A9ABE6500FF9D31 /* ProgressView.h */,
+				D786690B1A9ABE6500FF9D31 /* ProgressView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D7A30C581A9480CA00074D12 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D7A30C591A9480DF00074D12 /* NSMutableArray+Shuffling.h */,
+				D7A30C5A1A9480DF00074D12 /* NSMutableArray+Shuffling.m */,
+				D7A30C5B1A9480DF00074D12 /* NSTextField+AnimatedSetString.h */,
+				D7A30C5C1A9480DF00074D12 /* NSTextField+AnimatedSetString.m */,
+				D7A30C771A9486E500074D12 /* NSView+NibLoading.h */,
+				D7A30C781A9486E500074D12 /* NSView+NibLoading.m */,
+				D7A30C841A94A23900074D12 /* MouseEventView.h */,
+				D7A30C851A94A23900074D12 /* MouseEventView.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		D7A30C5F1A9480FC00074D12 /* Servies */ = {
+			isa = PBXGroup;
+			children = (
+				D7A30C571A9480A300074D12 /* Constants.h */,
+				D7A30C601A94810C00074D12 /* AppService.h */,
+				D7A30C611A94810C00074D12 /* AppService.mm */,
+			);
+			name = Servies;
+			sourceTree = "<group>";
+		};
+		D7A30C631A94816700074D12 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				D7A30C6E1A94837500074D12 /* Content.xib */,
+				D7A30C6F1A94837500074D12 /* Cross.xib */,
+				D7A30C701A94837500074D12 /* Rating.xib */,
+				D7A30C661A94819500074D12 /* Welcome.xib */,
+			);
+			name = Nibs;
+			sourceTree = "<group>";
+		};
+		D7EE2C7A1AB1DD5000595842 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7354D2B1AC1267600A76853 /* ofxOsc */,
+				D7EE2C781AB1DD4000595842 /* Foundation.framework */,
+				D7EE2C721AB1DBDC00595842 /* libedk.1.0.0.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7A30C2F1A947F0000074D12 /* emotionexperiment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7A30C4D1A947F0000074D12 /* Build configuration list for PBXNativeTarget "emotionexperiment" */;
+			buildPhases = (
+				D7A30C2C1A947F0000074D12 /* Sources */,
+				D7A30C2D1A947F0000074D12 /* Frameworks */,
+				D7A30C2E1A947F0000074D12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = emotionexperiment;
+			productName = emotionexperiment;
+			productReference = D7A30C301A947F0000074D12 /* emotionexperiment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D7A30C421A947F0000074D12 /* emotionexperimentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7A30C501A947F0000074D12 /* Build configuration list for PBXNativeTarget "emotionexperimentTests" */;
+			buildPhases = (
+				D7A30C3F1A947F0000074D12 /* Sources */,
+				D7A30C401A947F0000074D12 /* Frameworks */,
+				D7A30C411A947F0000074D12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7A30C451A947F0000074D12 /* PBXTargetDependency */,
+			);
+			name = emotionexperimentTests;
+			productName = emotionexperimentTests;
+			productReference = D7A30C431A947F0000074D12 /* emotionexperimentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7A30C281A947F0000074D12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Hai Le";
+				TargetAttributes = {
+					D7A30C2F1A947F0000074D12 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					D7A30C421A947F0000074D12 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = D7A30C2F1A947F0000074D12;
+					};
+				};
+			};
+			buildConfigurationList = D7A30C2B1A947F0000074D12 /* Build configuration list for PBXProject "emotionexperiment" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7A30C271A947F0000074D12;
+			productRefGroup = D7A30C311A947F0000074D12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7A30C2F1A947F0000074D12 /* emotionexperiment */,
+				D7A30C421A947F0000074D12 /* emotionexperimentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7A30C2E1A947F0000074D12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7A30C671A94819500074D12 /* Welcome.xib in Resources */,
+				D7A30C651A94818A00074D12 /* Screens.plist in Resources */,
+				D7A30C711A94837500074D12 /* Content.xib in Resources */,
+				D7A30C731A94837500074D12 /* Rating.xib in Resources */,
+				D7354D511AC1267700A76853 /* LICENSE.txt in Resources */,
+				D7A30C3B1A947F0000074D12 /* Images.xcassets in Resources */,
+				D7A30C721A94837500074D12 /* Cross.xib in Resources */,
+				D7A30C3E1A947F0000074D12 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7A30C411A947F0000074D12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7A30C2C1A947F0000074D12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7A30C5D1A9480DF00074D12 /* NSMutableArray+Shuffling.m in Sources */,
+				D7354D521AC1267700A76853 /* ofxOscBundle.cpp in Sources */,
+				D7354D551AC1267700A76853 /* ofxOscSender.cpp in Sources */,
+				D7A30C861A94A23900074D12 /* MouseEventView.m in Sources */,
+				D786690C1A9ABE6500FF9D31 /* ProgressView.m in Sources */,
+				D7A30C391A947F0000074D12 /* main.m in Sources */,
+				D7A30C371A947F0000074D12 /* AppDelegate.m in Sources */,
+				D7354D531AC1267700A76853 /* ofxOscMessage.cpp in Sources */,
+				D7A30C621A94810C00074D12 /* AppService.mm in Sources */,
+				D7A30C791A9486E500074D12 /* NSView+NibLoading.m in Sources */,
+				D7A30C561A947F4D00074D12 /* BaseView.m in Sources */,
+				D7354D541AC1267700A76853 /* ofxOscReceiver.cpp in Sources */,
+				D7A30C5E1A9480DF00074D12 /* NSTextField+AnimatedSetString.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7A30C3F1A947F0000074D12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7A30C4A1A947F0000074D12 /* emotionexperimentTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7A30C451A947F0000074D12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7A30C2F1A947F0000074D12 /* emotionexperiment */;
+			targetProxy = D7A30C441A947F0000074D12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D7A30C3C1A947F0000074D12 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7A30C3D1A947F0000074D12 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7A30C4B1A947F0000074D12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D7A30C4C1A947F0000074D12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D7A30C4E1A947F0000074D12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = emotionexperiment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/EmotivXavierResearch/lib",
+					"$(PROJECT_DIR)/libs",
+					"$(PROJECT_DIR)/ofxOsc/libs/oscpack/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = emotionexperiment;
+				SDKROOT = macosx10.9;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		D7A30C4F1A947F0000074D12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = emotionexperiment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/EmotivXavierResearch/lib",
+					"$(PROJECT_DIR)/libs",
+					"$(PROJECT_DIR)/ofxOsc/libs/oscpack/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = emotionexperiment;
+				SDKROOT = macosx10.9;
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		D7A30C511A947F0000074D12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = emotionexperimentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = emotionexperimentTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/emotionexperiment.app/Contents/MacOS/emotionexperiment";
+			};
+			name = Debug;
+		};
+		D7A30C521A947F0000074D12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = emotionexperimentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = emotionexperimentTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/emotionexperiment.app/Contents/MacOS/emotionexperiment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7A30C2B1A947F0000074D12 /* Build configuration list for PBXProject "emotionexperiment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7A30C4B1A947F0000074D12 /* Debug */,
+				D7A30C4C1A947F0000074D12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7A30C4D1A947F0000074D12 /* Build configuration list for PBXNativeTarget "emotionexperiment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7A30C4E1A947F0000074D12 /* Debug */,
+				D7A30C4F1A947F0000074D12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7A30C501A947F0000074D12 /* Build configuration list for PBXNativeTarget "emotionexperimentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7A30C511A947F0000074D12 /* Debug */,
+				D7A30C521A947F0000074D12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7A30C281A947F0000074D12 /* Project object */;
+}
