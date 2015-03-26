@@ -42,9 +42,17 @@
 
 #pragma mark - Notification
 - (void)nextScreenNotification:(NSNotification*)notif {
+    AppService *as = [AppService sharedInstance];
     _currentScreenIndex++;
-    [AppService sharedInstance].currentScreenIndex = _currentScreenIndex;
-    [self _transitionToNextViewController];
+    if ([_screens[as.currentScreenIndex][CType] isEqualToString:@"Rating"] && ![_screens[_currentScreenIndex][CType] isEqualToString:@"Rating"]) {
+        [as newTrackData];
+    }
+    as.currentScreenIndex = _currentScreenIndex;
+    if (_currentScreenIndex >= _screens.count) {
+        [as saveTrackDatas];
+    } else {
+        [self _transitionToNextViewController];
+    }
 }
 
 #pragma mark - Private
@@ -52,15 +60,9 @@
     // Add new view
     BaseView* baseController;
     NSDictionary* currentViewData = _screens[_currentScreenIndex];
-    if ([currentViewData[@"Type"] isEqual: @"Welcome"]) {
-        baseController = [[BaseView alloc] initWithNibName:@"Welcome" bundle:nil];
-    } else if ([currentViewData[@"Type"] isEqual: @"Content"]) {
-        baseController = [[BaseView alloc] initWithNibName:@"Content" bundle:nil];
-    } else if ([currentViewData[@"Type"] isEqual: @"Cross"]) {
-        baseController = [[BaseView alloc] initWithNibName:@"Cross" bundle:nil];
-    } else if ([currentViewData[@"Type"] isEqual: @"Rating"]) {
-        baseController = [[BaseView alloc] initWithNibName:@"Rating" bundle:nil];
-    }
+    NSString* screenType = currentViewData[CType];
+    
+    baseController = [[BaseView alloc] initWithNibName:screenType bundle:nil];
     [self transitionToView:baseController.view];
 }
 

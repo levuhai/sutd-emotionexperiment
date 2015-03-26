@@ -19,11 +19,16 @@
     NSMutableArray *_shuffledTrackURLs;
     
     int _currentTrackIndex;
+    NSMutableArray *_recoredData;
+    NSMutableDictionary* _tempDictionary;
 }
 
 @property (nonatomic) NSArray *screenData;
 @property int currentScreenIndex;
 + (AppService *) sharedInstance;
 - (NSURL*)nextTrack;
+- (void)addMarkerToTrackData:(NSString*)name value:(id)val;
+- (void)newTrackData;
+- (void)saveTrackDatas;
 
 @end

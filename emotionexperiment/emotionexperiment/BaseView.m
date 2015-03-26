@@ -63,35 +63,18 @@
     // Setup NSTimer if the screen progress type is Time
     NSString* progressType = _screenData[CProgressType];
     if([progressType isEqual:@"Time"]) {
-        _maxTime = [_screenData[CInterval] intValue];
-        [self.progressbar setMaxValue:_maxTime];
-        [self.progressbar setHidden:NO];
-        _currentTime = 0;
+        [self _setupTimeScreen];
         
-        _timer = [NSTimer scheduledTimerWithTimeInterval:(1/50.0)
-                                                  target:self
-                                                selector:@selector(progress)
-                                                userInfo:nil
-                                                 repeats:YES];
+    } else if([progressType isEqual:@"Baseline"]) {
+         // Send marker start baseline
+        [self _sendMarker:@"Baseline Start" value:[NSDate date]];
+        [self _setupTimeScreen];
+        
     } else if([progressType isEqual:@"Track"]) {
-        _player = [[AVAudioPlayer alloc] initWithContentsOfURL:[[AppService sharedInstance] nextTrack] error:nil];
-        _player.delegate = self;
+        [self _sendMarker:@"Track Start" value:[NSDate date]];
+        [self _setupTrackScreen];
         
-        _maxTime = _player.duration;
-        [self.progressbar setMaxValue:_maxTime];
-        [self.progressbar setHidden:NO];
-        _currentTime = 0;
-        
-        _timer = [NSTimer scheduledTimerWithTimeInterval:(1/50.0)
-                                                  target:self
-                                                selector:@selector(progressTrack)
-                                                userInfo:nil
-                                                 repeats:YES];
-        
-        [_player prepareToPlay];
-        [_player play];
-        
-    } else if ([_screenData[CProgressType] isEqual:@"Double Tap"]) {
+    } else if ([progressType isEqual:@"Double Tap"]) {
         _doubleTapEnabled = YES;
     }
     
@@ -108,7 +91,42 @@
 
 #pragma mark - AVAudioPlayerDelegate
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag {
+    [self _sendMarker:@"Track End" value:[NSDate date]];
     [[NSNotificationCenter defaultCenter] postNotificationName:kNextScreenNotification object:self];
+}
+
+#pragma mark - Private
+//
+- (void)_setupTimeScreen {
+    _maxTime = [_screenData[CInterval] intValue];
+    [self.progressbar setMaxValue:_maxTime];
+    [self.progressbar setHidden:NO];
+    _currentTime = 0;
+    
+    _timer = [NSTimer scheduledTimerWithTimeInterval:(1/50.0)
+                                              target:self
+                                            selector:@selector(progress)
+                                            userInfo:nil
+                                             repeats:YES];
+}
+
+- (void)_setupTrackScreen {
+    _player = [[AVAudioPlayer alloc] initWithContentsOfURL:[[AppService sharedInstance] nextTrack] error:nil];
+    _player.delegate = self;
+    [self _sendMarker:@"Track Name" value:[[_player.url path] lastPathComponent]];
+    _maxTime = _player.duration;
+    [self.progressbar setMaxValue:_maxTime];
+    [self.progressbar setHidden:NO];
+    _currentTime = 0;
+    
+    _timer = [NSTimer scheduledTimerWithTimeInterval:(1/50.0)
+                                              target:self
+                                            selector:@selector(progressTrack)
+                                            userInfo:nil
+                                             repeats:YES];
+    
+    [_player prepareToPlay];
+    [_player play];
 }
 
 // Display progress bar
@@ -120,6 +138,10 @@
     _currentTime += 1/50.0;
     [self.progressbar setValue:_currentTime];
     if (_currentTime >= _maxTime) {
+        if ([_screenData[CProgressType] isEqualToString:@"Baseline"]) {
+            // Send marker end baseline
+            [self _sendMarker:@"Baseline End" value:[NSDate date]];
+        }
         [_timer invalidate];
         [self.progressbar setHidden:YES];
         [[NSNotificationCenter defaultCenter] postNotificationName:kNextScreenNotification object:self];
@@ -138,8 +160,17 @@
 
 - (void)doubleClick:(NSEvent *)event {
     if (_doubleTapEnabled) {
+        if ([_screenData[CType] isEqualToString:@"Rating"]) {
+            NSNumber *value = [NSNumber numberWithFloat:self.rating.floatValue];
+            [self _sendMarker:_screenData[CMainText][@"Short"] value:value];
+        }
         [[NSNotificationCenter defaultCenter] postNotificationName:kNextScreenNotification object:self];
     }
+}
+
+// Send marker
+- (void)_sendMarker:(NSString*)message value:(id)value {
+    [[AppService sharedInstance] addMarkerToTrackData:message value:value];
 }
 
 

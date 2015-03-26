@@ -12,6 +12,8 @@
 #define CMainText           @"Main Text"
 #define CSubText            @"Sub Text"
 #define CProgressType       @"Progress Type"
+#define CMarkerType         @"Marker Type"
+#define CType               @"Type"
 #define CInterval           @"Interval"
 #define CBlink              @"Blink"
 

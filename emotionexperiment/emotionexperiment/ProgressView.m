@@ -52,7 +52,7 @@
     progressPath.lineWidth = 5;
     [progressPath moveToPoint:NSMakePoint(0,height)];
     [progressPath lineToPoint:NSMakePoint(_percentage*width,height)];
-    NSLog(@"%f %f %f",_value,_maxValue,_percentage);
+    //NSLog(@"%f %f %f",_value,_maxValue,_percentage);
     [progressPath stroke];
     
     // Restore the context to what it was before we messed with it

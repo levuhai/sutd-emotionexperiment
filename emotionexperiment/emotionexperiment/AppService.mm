@@ -46,6 +46,7 @@ static AppService *sharedInstance = nil;
         // Get track list
         [self _getTrackList];
         _currentScreenIndex = 0;
+        _recoredData = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -120,6 +121,36 @@ static AppService *sharedInstance = nil;
     NSURL *url = _shuffledTrackURLs[_currentTrackIndex];
     _currentTrackIndex++;
     return url;
+}
+
+- (void)addMarkerToTrackData:(NSString*)name value:(id)val {
+    if (_tempDictionary == nil)
+        _tempDictionary = [NSMutableDictionary new];
+    _tempDictionary[name] = val;
+}
+
+- (void)newTrackData {
+    if (_tempDictionary != nil) {
+        [_recoredData addObject:[NSDictionary dictionaryWithDictionary:_tempDictionary]];
+        NSLog(@"%@",_tempDictionary);
+        //_tempDictionary = nil;
+        _tempDictionary = [NSMutableDictionary new];
+    } else {
+        _tempDictionary = [NSMutableDictionary new];
+    }
+}
+
+- (void)saveTrackDatas {
+    NSLog(@"%@",_recoredData);
+    [self _writeToPlist:@"recorded.plist" withData:_recoredData];
+}
+
+- (void)_writeToPlist: (NSString*)fileName withData:(NSMutableArray *)data
+{
+    NSString *finalPath = [_dataFolder stringByAppendingPathComponent:fileName];
+    
+    [data writeToFile:finalPath atomically: YES];
+    /* This would change the firmware version in the plist to 1.1.1 by initing the NSDictionary with the plist, then changing the value of the string in the key "ProductVersion" to what you specified */
 }
 
 @end

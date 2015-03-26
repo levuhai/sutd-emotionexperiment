@@ -7,14 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D7354D4E1AC1267700A76853 /* libOsc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7354D3F1AC1267700A76853 /* libOsc.a */; };
-		D7354D4F1AC1267700A76853 /* liboscpack.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7354D401AC1267700A76853 /* liboscpack.dylib */; };
-		D7354D501AC1267700A76853 /* liboscpack.dylib.1.0.2 in Frameworks */ = {isa = PBXBuildFile; fileRef = D7354D411AC1267700A76853 /* liboscpack.dylib.1.0.2 */; };
-		D7354D511AC1267700A76853 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = D7354D421AC1267700A76853 /* LICENSE.txt */; };
-		D7354D521AC1267700A76853 /* ofxOscBundle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D7354D461AC1267700A76853 /* ofxOscBundle.cpp */; };
-		D7354D531AC1267700A76853 /* ofxOscMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D7354D481AC1267700A76853 /* ofxOscMessage.cpp */; };
-		D7354D541AC1267700A76853 /* ofxOscReceiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D7354D4A1AC1267700A76853 /* ofxOscReceiver.cpp */; };
-		D7354D551AC1267700A76853 /* ofxOscSender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D7354D4C1AC1267700A76853 /* ofxOscSender.cpp */; };
 		D786690C1A9ABE6500FF9D31 /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = D786690B1A9ABE6500FF9D31 /* ProgressView.m */; };
 		D7A30C371A947F0000074D12 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A30C361A947F0000074D12 /* AppDelegate.m */; };
 		D7A30C391A947F0000074D12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A30C381A947F0000074D12 /* main.m */; };
@@ -32,7 +24,6 @@
 		D7A30C731A94837500074D12 /* Rating.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7A30C701A94837500074D12 /* Rating.xib */; };
 		D7A30C791A9486E500074D12 /* NSView+NibLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A30C781A9486E500074D12 /* NSView+NibLoading.m */; };
 		D7A30C861A94A23900074D12 /* MouseEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A30C851A94A23900074D12 /* MouseEventView.m */; };
-		D7EE2C731AB1DBDC00595842 /* libedk.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7EE2C721AB1DBDC00595842 /* libedk.1.0.0.dylib */; };
 		D7EE2C791AB1DD4000595842 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7EE2C781AB1DD4000595842 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,34 +37,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D7354DAE1AC1486D00A76853 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		D7354D301AC1267600A76853 /* IpEndpointName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpEndpointName.h; sourceTree = "<group>"; };
-		D7354D311AC1267700A76853 /* NetworkingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingUtils.h; sourceTree = "<group>"; };
-		D7354D321AC1267700A76853 /* PacketListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketListener.h; sourceTree = "<group>"; };
-		D7354D331AC1267700A76853 /* TimerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerListener.h; sourceTree = "<group>"; };
-		D7354D341AC1267700A76853 /* UdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UdpSocket.h; sourceTree = "<group>"; };
-		D7354D361AC1267700A76853 /* MessageMappingOscPacketListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageMappingOscPacketListener.h; sourceTree = "<group>"; };
-		D7354D371AC1267700A76853 /* OscException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscException.h; sourceTree = "<group>"; };
-		D7354D381AC1267700A76853 /* OscHostEndianness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscHostEndianness.h; sourceTree = "<group>"; };
-		D7354D391AC1267700A76853 /* OscOutboundPacketStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscOutboundPacketStream.h; sourceTree = "<group>"; };
-		D7354D3A1AC1267700A76853 /* OscPacketListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscPacketListener.h; sourceTree = "<group>"; };
-		D7354D3B1AC1267700A76853 /* OscPrintReceivedElements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscPrintReceivedElements.h; sourceTree = "<group>"; };
-		D7354D3C1AC1267700A76853 /* OscReceivedElements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscReceivedElements.h; sourceTree = "<group>"; };
-		D7354D3D1AC1267700A76853 /* OscTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscTypes.h; sourceTree = "<group>"; };
-		D7354D3F1AC1267700A76853 /* libOsc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOsc.a; sourceTree = "<group>"; };
-		D7354D401AC1267700A76853 /* liboscpack.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = liboscpack.dylib; sourceTree = "<group>"; };
-		D7354D411AC1267700A76853 /* liboscpack.dylib.1.0.2 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = liboscpack.dylib.1.0.2; sourceTree = "<group>"; };
-		D7354D421AC1267700A76853 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		D7354D441AC1267700A76853 /* ofxOsc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOsc.h; sourceTree = "<group>"; };
-		D7354D451AC1267700A76853 /* ofxOscArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOscArg.h; sourceTree = "<group>"; };
-		D7354D461AC1267700A76853 /* ofxOscBundle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxOscBundle.cpp; sourceTree = "<group>"; };
-		D7354D471AC1267700A76853 /* ofxOscBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOscBundle.h; sourceTree = "<group>"; };
-		D7354D481AC1267700A76853 /* ofxOscMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxOscMessage.cpp; sourceTree = "<group>"; };
-		D7354D491AC1267700A76853 /* ofxOscMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOscMessage.h; sourceTree = "<group>"; };
-		D7354D4A1AC1267700A76853 /* ofxOscReceiver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxOscReceiver.cpp; sourceTree = "<group>"; };
-		D7354D4B1AC1267700A76853 /* ofxOscReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOscReceiver.h; sourceTree = "<group>"; };
-		D7354D4C1AC1267700A76853 /* ofxOscSender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxOscSender.cpp; sourceTree = "<group>"; };
-		D7354D4D1AC1267700A76853 /* ofxOscSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOscSender.h; sourceTree = "<group>"; };
 		D786690A1A9ABE6500FF9D31 /* ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
 		D786690B1A9ABE6500FF9D31 /* ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
 		D7A30C301A947F0000074D12 /* emotionexperiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = emotionexperiment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,7 +80,6 @@
 		D7A30C781A9486E500074D12 /* NSView+NibLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+NibLoading.m"; sourceTree = "<group>"; };
 		D7A30C841A94A23900074D12 /* MouseEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MouseEventView.h; sourceTree = "<group>"; };
 		D7A30C851A94A23900074D12 /* MouseEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MouseEventView.m; sourceTree = "<group>"; };
-		D7EE2C721AB1DBDC00595842 /* libedk.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libedk.1.0.0.dylib; path = libs/libedk.1.0.0.dylib; sourceTree = "<group>"; };
 		D7EE2C781AB1DD4000595842 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
@@ -114,10 +89,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7EE2C791AB1DD4000595842 /* Foundation.framework in Frameworks */,
-				D7354D4F1AC1267700A76853 /* liboscpack.dylib in Frameworks */,
-				D7EE2C731AB1DBDC00595842 /* libedk.1.0.0.dylib in Frameworks */,
-				D7354D4E1AC1267700A76853 /* libOsc.a in Frameworks */,
-				D7354D501AC1267700A76853 /* liboscpack.dylib.1.0.2 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,96 +102,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D7354D2B1AC1267600A76853 /* ofxOsc */ = {
-			isa = PBXGroup;
-			children = (
-				D7354D2C1AC1267600A76853 /* libs */,
-				D7354D421AC1267700A76853 /* LICENSE.txt */,
-				D7354D431AC1267700A76853 /* src */,
-			);
-			path = ofxOsc;
-			sourceTree = "<group>";
-		};
-		D7354D2C1AC1267600A76853 /* libs */ = {
-			isa = PBXGroup;
-			children = (
-				D7354D2D1AC1267600A76853 /* oscpack */,
-			);
-			path = libs;
-			sourceTree = "<group>";
-		};
-		D7354D2D1AC1267600A76853 /* oscpack */ = {
-			isa = PBXGroup;
-			children = (
-				D7354D2E1AC1267600A76853 /* include */,
-				D7354D3E1AC1267700A76853 /* lib */,
-			);
-			path = oscpack;
-			sourceTree = "<group>";
-		};
-		D7354D2E1AC1267600A76853 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				D7354D2F1AC1267600A76853 /* ip */,
-				D7354D351AC1267700A76853 /* osc */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		D7354D2F1AC1267600A76853 /* ip */ = {
-			isa = PBXGroup;
-			children = (
-				D7354D301AC1267600A76853 /* IpEndpointName.h */,
-				D7354D311AC1267700A76853 /* NetworkingUtils.h */,
-				D7354D321AC1267700A76853 /* PacketListener.h */,
-				D7354D331AC1267700A76853 /* TimerListener.h */,
-				D7354D341AC1267700A76853 /* UdpSocket.h */,
-			);
-			path = ip;
-			sourceTree = "<group>";
-		};
-		D7354D351AC1267700A76853 /* osc */ = {
-			isa = PBXGroup;
-			children = (
-				D7354D361AC1267700A76853 /* MessageMappingOscPacketListener.h */,
-				D7354D371AC1267700A76853 /* OscException.h */,
-				D7354D381AC1267700A76853 /* OscHostEndianness.h */,
-				D7354D391AC1267700A76853 /* OscOutboundPacketStream.h */,
-				D7354D3A1AC1267700A76853 /* OscPacketListener.h */,
-				D7354D3B1AC1267700A76853 /* OscPrintReceivedElements.h */,
-				D7354D3C1AC1267700A76853 /* OscReceivedElements.h */,
-				D7354D3D1AC1267700A76853 /* OscTypes.h */,
-			);
-			path = osc;
-			sourceTree = "<group>";
-		};
-		D7354D3E1AC1267700A76853 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				D7354D3F1AC1267700A76853 /* libOsc.a */,
-				D7354D401AC1267700A76853 /* liboscpack.dylib */,
-				D7354D411AC1267700A76853 /* liboscpack.dylib.1.0.2 */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		D7354D431AC1267700A76853 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				D7354D441AC1267700A76853 /* ofxOsc.h */,
-				D7354D451AC1267700A76853 /* ofxOscArg.h */,
-				D7354D461AC1267700A76853 /* ofxOscBundle.cpp */,
-				D7354D471AC1267700A76853 /* ofxOscBundle.h */,
-				D7354D481AC1267700A76853 /* ofxOscMessage.cpp */,
-				D7354D491AC1267700A76853 /* ofxOscMessage.h */,
-				D7354D4A1AC1267700A76853 /* ofxOscReceiver.cpp */,
-				D7354D4B1AC1267700A76853 /* ofxOscReceiver.h */,
-				D7354D4C1AC1267700A76853 /* ofxOscSender.cpp */,
-				D7354D4D1AC1267700A76853 /* ofxOscSender.h */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
 		D7A30C271A947F0000074D12 = {
 			isa = PBXGroup;
 			children = (
@@ -333,9 +214,7 @@
 		D7EE2C7A1AB1DD5000595842 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D7354D2B1AC1267600A76853 /* ofxOsc */,
 				D7EE2C781AB1DD4000595842 /* Foundation.framework */,
-				D7EE2C721AB1DBDC00595842 /* libedk.1.0.0.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -350,6 +229,7 @@
 				D7A30C2C1A947F0000074D12 /* Sources */,
 				D7A30C2D1A947F0000074D12 /* Frameworks */,
 				D7A30C2E1A947F0000074D12 /* Resources */,
+				D7354DAE1AC1486D00A76853 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -424,7 +304,6 @@
 				D7A30C651A94818A00074D12 /* Screens.plist in Resources */,
 				D7A30C711A94837500074D12 /* Content.xib in Resources */,
 				D7A30C731A94837500074D12 /* Rating.xib in Resources */,
-				D7354D511AC1267700A76853 /* LICENSE.txt in Resources */,
 				D7A30C3B1A947F0000074D12 /* Images.xcassets in Resources */,
 				D7A30C721A94837500074D12 /* Cross.xib in Resources */,
 				D7A30C3E1A947F0000074D12 /* MainMenu.xib in Resources */,
@@ -446,17 +325,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7A30C5D1A9480DF00074D12 /* NSMutableArray+Shuffling.m in Sources */,
-				D7354D521AC1267700A76853 /* ofxOscBundle.cpp in Sources */,
-				D7354D551AC1267700A76853 /* ofxOscSender.cpp in Sources */,
 				D7A30C861A94A23900074D12 /* MouseEventView.m in Sources */,
 				D786690C1A9ABE6500FF9D31 /* ProgressView.m in Sources */,
 				D7A30C391A947F0000074D12 /* main.m in Sources */,
 				D7A30C371A947F0000074D12 /* AppDelegate.m in Sources */,
-				D7354D531AC1267700A76853 /* ofxOscMessage.cpp in Sources */,
 				D7A30C621A94810C00074D12 /* AppService.mm in Sources */,
 				D7A30C791A9486E500074D12 /* NSView+NibLoading.m in Sources */,
 				D7A30C561A947F4D00074D12 /* BaseView.m in Sources */,
-				D7354D541AC1267700A76853 /* ofxOscReceiver.cpp in Sources */,
 				D7A30C5E1A9480DF00074D12 /* NSTextField+AnimatedSetString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -570,16 +445,13 @@
 		D7A30C4E1A947F0000074D12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = emotionexperiment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SYSTEM_APPS_DIR)/EmotivXavierResearch/lib",
-					"$(PROJECT_DIR)/libs",
-					"$(PROJECT_DIR)/ofxOsc/libs/oscpack/lib",
-				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = emotionexperiment;
 				SDKROOT = macosx10.9;
@@ -590,16 +462,13 @@
 		D7A30C4F1A947F0000074D12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = emotionexperiment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SYSTEM_APPS_DIR)/EmotivXavierResearch/lib",
-					"$(PROJECT_DIR)/libs",
-					"$(PROJECT_DIR)/ofxOsc/libs/oscpack/lib",
-				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = emotionexperiment;
 				SDKROOT = macosx10.9;

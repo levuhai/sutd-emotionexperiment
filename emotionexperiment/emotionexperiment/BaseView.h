@@ -13,6 +13,15 @@
 #import "MouseEventView.h"
 #import "ProgressView.h"
 
+enum {
+    kBaselineStart = 90,
+    kBaselineEnd,
+    kTrackName,
+    kTrackStart,
+    kTrackEnd
+};
+typedef NSUInteger EEState;
+
 @interface BaseView : NSViewController <AVAudioPlayerDelegate,MouseEventViewDelegate> {
     NSTimer *_timer;
     double _maxTime;
