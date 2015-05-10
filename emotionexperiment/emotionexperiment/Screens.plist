@@ -73,7 +73,7 @@
 		<key>Sub Text</key>
 		<dict>
 			<key>Blink</key>
-			<false/>
+			<true/>
 			<key>Font Size</key>
 			<integer>20</integer>
 			<key>Text</key>
@@ -117,100 +117,214 @@
 		<string>Cross</string>
 	</dict>
 	<dict>
+		<key>Interval</key>
+		<integer>5</integer>
 		<key>Main Text</key>
 		<dict>
 			<key>Font Size</key>
 			<integer>35</integer>
-			<key>Short</key>
-			<string>Happy</string>
 			<key>Text</key>
-			<string>How happy did the piece make you feel ?
-</string>
+			<string>Please relax and look at the cross in the screen. Try not to move while we are recording your baseline for 1 minutes</string>
 		</dict>
+		<key>Progress Hidden</key>
+		<true/>
 		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
+		<string>Time</string>
 		<key>Type</key>
-		<string>Rating</string>
+		<string>Content</string>
 	</dict>
 	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Angry</string>
-			<key>Text</key>
-			<string>How angry did the piece make you feel ?
-</string>
-		</dict>
+		<key>Interval</key>
+		<integer>60</integer>
+		<key>Progress Hidden</key>
+		<false/>
 		<key>Progress Type</key>
-		<string>Double Tap</string>
+		<string>Baseline</string>
 		<key>Sub Text</key>
 		<dict>
+			<key>Blink</key>
+			<true/>
 			<key>Font Size</key>
 			<integer>20</integer>
 			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
+			<string>Your baseline is now being recorded</string>
 		</dict>
 		<key>Type</key>
-		<string>Rating</string>
+		<string>Cross</string>
 	</dict>
 	<dict>
+		<key>Interval</key>
+		<integer>5</integer>
 		<key>Main Text</key>
 		<dict>
 			<key>Font Size</key>
 			<integer>35</integer>
-			<key>Short</key>
-			<string>Sad</string>
 			<key>Text</key>
-			<string>How sad did the piece make you feel ?
-</string>
+			<string>Thank you for not moving now the music listening experiment will start. Please try while listening to the music not to move or blink your eyes and look at the cross in the screen</string>
 		</dict>
+		<key>Progress Hidden</key>
+		<true/>
 		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
+		<string>Time</string>
 		<key>Type</key>
-		<string>Rating</string>
+		<string>Content</string>
 	</dict>
 	<dict>
+		<key>Progress Hidden</key>
+		<true/>
+		<key>Progress Type</key>
+		<string>Track</string>
+		<key>Sub Text</key>
+		<dict>
+			<key>Blink</key>
+			<false/>
+			<key>Font Size</key>
+			<integer>20</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>Type</key>
+		<string>Cross</string>
+	</dict>
+	<dict>
+		<key>Interval</key>
+		<integer>5</integer>
 		<key>Main Text</key>
 		<dict>
 			<key>Font Size</key>
 			<integer>35</integer>
-			<key>Short</key>
-			<string>Serene</string>
 			<key>Text</key>
-			<string>How serene did the piece make you feel ?
-</string>
+			<string>Please relax and look at the cross in the screen. Try not to move while we are recording your baseline for 1 minutes</string>
 		</dict>
+		<key>Progress Hidden</key>
+		<true/>
 		<key>Progress Type</key>
-		<string>Double Tap</string>
+		<string>Time</string>
+		<key>Type</key>
+		<string>Content</string>
+	</dict>
+	<dict>
+		<key>Interval</key>
+		<integer>60</integer>
+		<key>Progress Hidden</key>
+		<false/>
+		<key>Progress Type</key>
+		<string>Baseline</string>
 		<key>Sub Text</key>
 		<dict>
+			<key>Blink</key>
+			<true/>
 			<key>Font Size</key>
 			<integer>20</integer>
 			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
+			<string>Your baseline is now being recorded</string>
 		</dict>
 		<key>Type</key>
-		<string>Rating</string>
+		<string>Cross</string>
+	</dict>
+	<dict>
+		<key>Interval</key>
+		<integer>5</integer>
+		<key>Main Text</key>
+		<dict>
+			<key>Font Size</key>
+			<integer>35</integer>
+			<key>Text</key>
+			<string>Thank you for not moving now the music listening experiment will start. Please try while listening to the music not to move or blink your eyes and look at the cross in the screen</string>
+		</dict>
+		<key>Progress Hidden</key>
+		<true/>
+		<key>Progress Type</key>
+		<string>Time</string>
+		<key>Type</key>
+		<string>Content</string>
+	</dict>
+	<dict>
+		<key>Progress Hidden</key>
+		<true/>
+		<key>Progress Type</key>
+		<string>Track</string>
+		<key>Sub Text</key>
+		<dict>
+			<key>Blink</key>
+			<false/>
+			<key>Font Size</key>
+			<integer>20</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>Type</key>
+		<string>Cross</string>
+	</dict>
+	<dict>
+		<key>Interval</key>
+		<integer>5</integer>
+		<key>Main Text</key>
+		<dict>
+			<key>Font Size</key>
+			<integer>35</integer>
+			<key>Text</key>
+			<string>Please relax and look at the cross in the screen. Try not to move while we are recording your baseline for 1 minutes</string>
+		</dict>
+		<key>Progress Hidden</key>
+		<true/>
+		<key>Progress Type</key>
+		<string>Time</string>
+		<key>Type</key>
+		<string>Content</string>
+	</dict>
+	<dict>
+		<key>Interval</key>
+		<integer>60</integer>
+		<key>Progress Hidden</key>
+		<false/>
+		<key>Progress Type</key>
+		<string>Baseline</string>
+		<key>Sub Text</key>
+		<dict>
+			<key>Blink</key>
+			<true/>
+			<key>Font Size</key>
+			<integer>20</integer>
+			<key>Text</key>
+			<string>Your baseline is now being recorded</string>
+		</dict>
+		<key>Type</key>
+		<string>Cross</string>
+	</dict>
+	<dict>
+		<key>Interval</key>
+		<integer>5</integer>
+		<key>Main Text</key>
+		<dict>
+			<key>Font Size</key>
+			<integer>35</integer>
+			<key>Text</key>
+			<string>Thank you for not moving now the music listening experiment will start. Please try while listening to the music not to move or blink your eyes and look at the cross in the screen</string>
+		</dict>
+		<key>Progress Hidden</key>
+		<true/>
+		<key>Progress Type</key>
+		<string>Time</string>
+		<key>Type</key>
+		<string>Content</string>
+	</dict>
+	<dict>
+		<key>Progress Hidden</key>
+		<true/>
+		<key>Progress Type</key>
+		<string>Track</string>
+		<key>Sub Text</key>
+		<dict>
+			<key>Blink</key>
+			<false/>
+			<key>Font Size</key>
+			<integer>20</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>Type</key>
+		<string>Cross</string>
 	</dict>
 	<dict>
 		<key>Main Text</key>
@@ -218,7 +332,7 @@
 			<key>Font Size</key>
 			<string>35</string>
 			<key>Text</key>
-			<string>Please take a short break for 3 minutes. Double tap at the trackpad to resume the experiment at any time</string>
+			<string>Take a short break to rest. Please do not remove any of the sensors</string>
 		</dict>
 		<key>Progress Type</key>
 		<string>Double Tap</string>
@@ -227,8 +341,7 @@
 			<key>Font Size</key>
 			<integer>20</integer>
 			<key>Text</key>
-			<string>Please tap twice to continue to the experiment
-</string>
+			<string>Tap twice if you want to resume the experiment or wait un2l the break is over</string>
 		</dict>
 		<key>Type</key>
 		<string>Content</string>
@@ -254,13 +367,13 @@
 		<key>Interval</key>
 		<integer>60</integer>
 		<key>Progress Hidden</key>
-		<true/>
+		<false/>
 		<key>Progress Type</key>
 		<string>Baseline</string>
 		<key>Sub Text</key>
 		<dict>
 			<key>Blink</key>
-			<false/>
+			<true/>
 			<key>Font Size</key>
 			<integer>20</integer>
 			<key>Text</key>
@@ -302,289 +415,6 @@
 		</dict>
 		<key>Type</key>
 		<string>Cross</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Happy</string>
-			<key>Text</key>
-			<string>How happy did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Angry</string>
-			<key>Text</key>
-			<string>How angry did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Sad</string>
-			<key>Text</key>
-			<string>How sad did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Serene</string>
-			<key>Text</key>
-			<string>How serene did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>5</integer>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Text</key>
-			<string>Please relax and look at the cross in the screen. Try not to move while we are recording your baseline for 1 minutes</string>
-		</dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Time</string>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>6</integer>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Baseline</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Blink</key>
-			<false/>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Your baseline is now being recorded</string>
-		</dict>
-		<key>Type</key>
-		<string>Cross</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>5</integer>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Text</key>
-			<string>Thank you for not moving now the music listening experiment will start. Please try while listening to the music not to move or blink your eyes and look at the cross in the screen</string>
-		</dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Time</string>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Track</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Blink</key>
-			<false/>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
-		<key>Type</key>
-		<string>Cross</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Happy</string>
-			<key>Text</key>
-			<string>How happy did the piece make you feel?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Angry</string>
-			<key>Text</key>
-			<string>How angry did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Sad</string>
-			<key>Text</key>
-			<string>How sad did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Serene</string>
-			<key>Text</key>
-			<string>How serene did you perceive the piece to be ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<string>35</string>
-			<key>Text</key>
-			<string>Please take a short break for 3 minutes. Double tap at the trackpad to resume the experiment at any time</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice to continue to the experiment
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Content</string>
 	</dict>
 	<dict>
 		<key>Interval</key>
@@ -607,13 +437,13 @@
 		<key>Interval</key>
 		<integer>60</integer>
 		<key>Progress Hidden</key>
-		<true/>
+		<false/>
 		<key>Progress Type</key>
 		<string>Baseline</string>
 		<key>Sub Text</key>
 		<dict>
 			<key>Blink</key>
-			<false/>
+			<true/>
 			<key>Font Size</key>
 			<integer>20</integer>
 			<key>Text</key>
@@ -655,123 +485,6 @@
 		</dict>
 		<key>Type</key>
 		<string>Cross</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Happy</string>
-			<key>Text</key>
-			<string>How happy did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Angry</string>
-			<key>Text</key>
-			<string>How angry did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Sad</string>
-			<key>Text</key>
-			<string>How sad did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Serene</string>
-			<key>Text</key>
-			<string>How serene did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<string>35</string>
-			<key>Text</key>
-			<string>Please take a short break for 3 minutes. Double tap at the trackpad to resume the experiment at any time</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice to continue to the experiment
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Content</string>
 	</dict>
 	<dict>
 		<key>Interval</key>
@@ -794,13 +507,13 @@
 		<key>Interval</key>
 		<integer>60</integer>
 		<key>Progress Hidden</key>
-		<true/>
+		<false/>
 		<key>Progress Type</key>
 		<string>Baseline</string>
 		<key>Sub Text</key>
 		<dict>
 			<key>Blink</key>
-			<false/>
+			<true/>
 			<key>Font Size</key>
 			<integer>20</integer>
 			<key>Text</key>
@@ -842,123 +555,6 @@
 		</dict>
 		<key>Type</key>
 		<string>Cross</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Happy</string>
-			<key>Text</key>
-			<string>How happy did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Angry</string>
-			<key>Text</key>
-			<string>How angry did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Sad</string>
-			<key>Text</key>
-			<string>How sad did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Serene</string>
-			<key>Text</key>
-			<string>How serene did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<string>35</string>
-			<key>Text</key>
-			<string>Please take a short break for 3 minutes. Double tap at the trackpad to resume the experiment at any time</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice to continue to the experiment
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Content</string>
 	</dict>
 	<dict>
 		<key>Interval</key>
@@ -981,13 +577,13 @@
 		<key>Interval</key>
 		<integer>60</integer>
 		<key>Progress Hidden</key>
-		<true/>
+		<false/>
 		<key>Progress Type</key>
 		<string>Baseline</string>
 		<key>Sub Text</key>
 		<dict>
 			<key>Blink</key>
-			<false/>
+			<true/>
 			<key>Font Size</key>
 			<integer>20</integer>
 			<key>Text</key>
@@ -1029,1968 +625,6 @@
 		</dict>
 		<key>Type</key>
 		<string>Cross</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Happy</string>
-			<key>Text</key>
-			<string>How happy did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Angry</string>
-			<key>Text</key>
-			<string>How angry did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Sad</string>
-			<key>Text</key>
-			<string>How sad did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Serene</string>
-			<key>Text</key>
-			<string>How serene did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<string>35</string>
-			<key>Text</key>
-			<string>Please take a short break for 3 minutes. Double tap at the trackpad to resume the experiment at any time</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice to continue to the experiment
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>5</integer>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Text</key>
-			<string>Please relax and look at the cross in the screen. Try not to move while we are recording your baseline for 1 minutes</string>
-		</dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Time</string>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>60</integer>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Baseline</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Blink</key>
-			<false/>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Your baseline is now being recorded</string>
-		</dict>
-		<key>Type</key>
-		<string>Cross</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>5</integer>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Text</key>
-			<string>Thank you for not moving now the music listening experiment will start. Please try while listening to the music not to move or blink your eyes and look at the cross in the screen</string>
-		</dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Time</string>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Track</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Blink</key>
-			<false/>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
-		<key>Type</key>
-		<string>Cross</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Happy</string>
-			<key>Text</key>
-			<string>How happy did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Angry</string>
-			<key>Text</key>
-			<string>How angry did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Sad</string>
-			<key>Text</key>
-			<string>How sad did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Serene</string>
-			<key>Text</key>
-			<string>How serene did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<string>35</string>
-			<key>Text</key>
-			<string>Please take a short break for 3 minutes. Double tap at the trackpad to resume the experiment at any time</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice to continue to the experiment
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>5</integer>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Text</key>
-			<string>Please relax and look at the cross in the screen. Try not to move while we are recording your baseline for 1 minutes</string>
-		</dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Time</string>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>60</integer>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Baseline</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Blink</key>
-			<false/>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Your baseline is now being recorded</string>
-		</dict>
-		<key>Type</key>
-		<string>Cross</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>5</integer>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Text</key>
-			<string>Thank you for not moving now the music listening experiment will start. Please try while listening to the music not to move or blink your eyes and look at the cross in the screen</string>
-		</dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Time</string>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Track</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Blink</key>
-			<false/>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
-		<key>Type</key>
-		<string>Cross</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Happy</string>
-			<key>Text</key>
-			<string>How happy did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Angry</string>
-			<key>Text</key>
-			<string>How angry did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Sad</string>
-			<key>Text</key>
-			<string>How sad did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Serene</string>
-			<key>Text</key>
-			<string>How serene did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>5</integer>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Text</key>
-			<string>Please take a short break from listening ..</string>
-		</dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Time</string>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>5</integer>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Text</key>
-			<string>Please relax and look at the cross in the screen. Try not to move while we are recording your baseline for 1 minutes</string>
-		</dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Time</string>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>6</integer>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Baseline</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Blink</key>
-			<false/>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Your baseline is now being recorded</string>
-		</dict>
-		<key>Type</key>
-		<string>Cross</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>5</integer>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Text</key>
-			<string>Thank you for not moving now the music listening experiment will start. Please try while listening to the music not to move or blink your eyes and look at the cross in the screen</string>
-		</dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Time</string>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Track</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Blink</key>
-			<false/>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
-		<key>Type</key>
-		<string>Cross</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Happy</string>
-			<key>Text</key>
-			<string>How happy did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Angry</string>
-			<key>Text</key>
-			<string>How angry did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Sad</string>
-			<key>Text</key>
-			<string>How sad did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Serene</string>
-			<key>Text</key>
-			<string>How serene did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<string>35</string>
-			<key>Text</key>
-			<string>Please take a short break for 3 minutes. Double tap at the trackpad to resume the experiment at any time</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice to continue to the experiment
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>5</integer>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Text</key>
-			<string>Please relax and look at the cross in the screen. Try not to move while we are recording your baseline for 1 minutes</string>
-		</dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Time</string>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>60</integer>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Baseline</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Blink</key>
-			<false/>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Your baseline is now being recorded</string>
-		</dict>
-		<key>Type</key>
-		<string>Cross</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>5</integer>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Text</key>
-			<string>Thank you for not moving now the music listening experiment will start. Please try while listening to the music not to move or blink your eyes and look at the cross in the screen</string>
-		</dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Time</string>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Track</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Blink</key>
-			<false/>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
-		<key>Type</key>
-		<string>Cross</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Happy</string>
-			<key>Text</key>
-			<string>How happy did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Angry</string>
-			<key>Text</key>
-			<string>How angry did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Sad</string>
-			<key>Text</key>
-			<string>How sad did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Serene</string>
-			<key>Text</key>
-			<string>How serene did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<string>35</string>
-			<key>Text</key>
-			<string>Please take a short break for 3 minutes. Double tap at the trackpad to resume the experiment at any time</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice to continue to the experiment
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>5</integer>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Text</key>
-			<string>Please relax and look at the cross in the screen. Try not to move while we are recording your baseline for 1 minutes</string>
-		</dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Time</string>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>60</integer>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Baseline</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Blink</key>
-			<false/>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Your baseline is now being recorded</string>
-		</dict>
-		<key>Type</key>
-		<string>Cross</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>5</integer>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Text</key>
-			<string>Thank you for not moving now the music listening experiment will start. Please try while listening to the music not to move or blink your eyes and look at the cross in the screen</string>
-		</dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Time</string>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Track</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Blink</key>
-			<false/>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
-		<key>Type</key>
-		<string>Cross</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Happy</string>
-			<key>Text</key>
-			<string>How happy did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Angry</string>
-			<key>Text</key>
-			<string>How angry did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Sad</string>
-			<key>Text</key>
-			<string>How sad did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Serene</string>
-			<key>Text</key>
-			<string>How serene did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<string>35</string>
-			<key>Text</key>
-			<string>Please take a short break for 3 minutes. Double tap at the trackpad to resume the experiment at any time</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice to continue to the experiment
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>5</integer>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Text</key>
-			<string>Please relax and look at the cross in the screen. Try not to move while we are recording your baseline for 1 minutes</string>
-		</dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Time</string>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>60</integer>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Baseline</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Blink</key>
-			<false/>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Your baseline is now being recorded</string>
-		</dict>
-		<key>Type</key>
-		<string>Cross</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>5</integer>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Text</key>
-			<string>Thank you for not moving now the music listening experiment will start. Please try while listening to the music not to move or blink your eyes and look at the cross in the screen</string>
-		</dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Time</string>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Track</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Blink</key>
-			<false/>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
-		<key>Type</key>
-		<string>Cross</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Happy</string>
-			<key>Text</key>
-			<string>How happy did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Angry</string>
-			<key>Text</key>
-			<string>How angry did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Sad</string>
-			<key>Text</key>
-			<string>How sad did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Serene</string>
-			<key>Text</key>
-			<string>How serene did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<string>35</string>
-			<key>Text</key>
-			<string>Please take a short break for 3 minutes. Double tap at the trackpad to resume the experiment at any time</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice to continue to the experiment
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>5</integer>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Text</key>
-			<string>Please relax and look at the cross in the screen. Try not to move while we are recording your baseline for 1 minutes</string>
-		</dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Time</string>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>60</integer>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Baseline</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Blink</key>
-			<false/>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Your baseline is now being recorded</string>
-		</dict>
-		<key>Type</key>
-		<string>Cross</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>5</integer>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Text</key>
-			<string>Thank you for not moving now the music listening experiment will start. Please try while listening to the music not to move or blink your eyes and look at the cross in the screen</string>
-		</dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Time</string>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Track</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Blink</key>
-			<false/>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
-		<key>Type</key>
-		<string>Cross</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Happy</string>
-			<key>Text</key>
-			<string>How happy did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Angry</string>
-			<key>Text</key>
-			<string>How angry did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Sad</string>
-			<key>Text</key>
-			<string>How sad did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Serene</string>
-			<key>Text</key>
-			<string>How serene did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<string>35</string>
-			<key>Text</key>
-			<string>Please take a short break for 3 minutes. Double tap at the trackpad to resume the experiment at any time</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice to continue to the experiment
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>5</integer>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Text</key>
-			<string>Please relax and look at the cross in the screen. Try not to move while we are recording your baseline for 1 minutes</string>
-		</dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Time</string>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>60</integer>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Baseline</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Blink</key>
-			<false/>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Your baseline is now being recorded</string>
-		</dict>
-		<key>Type</key>
-		<string>Cross</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>5</integer>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Text</key>
-			<string>Thank you for not moving now the music listening experiment will start. Please try while listening to the music not to move or blink your eyes and look at the cross in the screen</string>
-		</dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Time</string>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Track</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Blink</key>
-			<false/>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
-		<key>Type</key>
-		<string>Cross</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Happy</string>
-			<key>Text</key>
-			<string>How happy did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Angry</string>
-			<key>Text</key>
-			<string>How angry did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Sad</string>
-			<key>Text</key>
-			<string>How sad did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Serene</string>
-			<key>Text</key>
-			<string>How serene did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<string>35</string>
-			<key>Text</key>
-			<string>Please take a short break for 3 minutes. Double tap at the trackpad to resume the experiment at any time</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice to continue to the experiment
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>5</integer>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Text</key>
-			<string>Please relax and look at the cross in the screen. Try not to move while we are recording your baseline for 1 minutes</string>
-		</dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Time</string>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>60</integer>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Baseline</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Blink</key>
-			<false/>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Your baseline is now being recorded</string>
-		</dict>
-		<key>Type</key>
-		<string>Cross</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>5</integer>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Text</key>
-			<string>Thank you for not moving now the music listening experiment will start. Please try while listening to the music not to move or blink your eyes and look at the cross in the screen</string>
-		</dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Time</string>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Track</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Blink</key>
-			<false/>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
-		<key>Type</key>
-		<string>Cross</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Happy</string>
-			<key>Text</key>
-			<string>How happy did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Angry</string>
-			<key>Text</key>
-			<string>How angry did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Sad</string>
-			<key>Text</key>
-			<string>How sad did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Serene</string>
-			<key>Text</key>
-			<string>How serene did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<string>35</string>
-			<key>Text</key>
-			<string>Please take a short break for 3 minutes. Double tap at the trackpad to resume the experiment at any time</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice to continue to the experiment
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>5</integer>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Text</key>
-			<string>Please relax and look at the cross in the screen. Try not to move while we are recording your baseline for 1 minutes</string>
-		</dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Time</string>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>60</integer>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Baseline</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Blink</key>
-			<false/>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Your baseline is now being recorded</string>
-		</dict>
-		<key>Type</key>
-		<string>Cross</string>
-	</dict>
-	<dict>
-		<key>Interval</key>
-		<integer>5</integer>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Text</key>
-			<string>Thank you for not moving now the music listening experiment will start. Please try while listening to the music not to move or blink your eyes and look at the cross in the screen</string>
-		</dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Time</string>
-		<key>Type</key>
-		<string>Content</string>
-	</dict>
-	<dict>
-		<key>Progress Hidden</key>
-		<true/>
-		<key>Progress Type</key>
-		<string>Track</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Blink</key>
-			<false/>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
-		<key>Type</key>
-		<string>Cross</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Happy</string>
-			<key>Text</key>
-			<string>How happy did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Angry</string>
-			<key>Text</key>
-			<string>How angry did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Sad</string>
-			<key>Text</key>
-			<string>How sad did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
-	</dict>
-	<dict>
-		<key>Main Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>35</integer>
-			<key>Short</key>
-			<string>Serene</string>
-			<key>Text</key>
-			<string>How serene did the piece make you feel ?
-</string>
-		</dict>
-		<key>Progress Type</key>
-		<string>Double Tap</string>
-		<key>Sub Text</key>
-		<dict>
-			<key>Font Size</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string>Please tap twice when you finish rating
-</string>
-		</dict>
-		<key>Type</key>
-		<string>Rating</string>
 	</dict>
 	<dict>
 		<key>Main Text</key>
@@ -2998,7 +632,7 @@
 			<key>Font Size</key>
 			<string>45</string>
 			<key>Text</key>
-			<string>This is the end of the experiment, thank you for your participation</string>
+			<string>he experiment has ended thank you for your participation !</string>
 		</dict>
 		<key>Progress Type</key>
 		<string>Double Tap</string>
@@ -3007,7 +641,7 @@
 			<key>Font Size</key>
 			<integer>20</integer>
 			<key>Text</key>
-			<string>Date Recored</string>
+			<string>Please tap twice to exit the program</string>
 		</dict>
 		<key>Type</key>
 		<string>Content</string>

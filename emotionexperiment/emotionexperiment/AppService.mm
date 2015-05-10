@@ -119,6 +119,7 @@ static AppService *sharedInstance = nil;
 
 - (NSURL *)nextTrack {
     NSURL *url = _shuffledTrackURLs[_currentTrackIndex];
+    NSLog(@"Track Index %d",_currentTrackIndex);
     _currentTrackIndex++;
     return url;
 }

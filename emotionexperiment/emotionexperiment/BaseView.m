@@ -67,11 +67,11 @@
         
     } else if([progressType isEqual:@"Baseline"]) {
          // Send marker start baseline
-        [self _sendMarker:@"Baseline Start" value:[NSDate date]];
+        [self _sendMarker:@"Baseline Start"];
         [self _setupTimeScreen];
         
     } else if([progressType isEqual:@"Track"]) {
-        [self _sendMarker:@"Track Start" value:[NSDate date]];
+        [self _sendMarker:@"Track Start"];
         [self _setupTrackScreen];
         
     } else if ([progressType isEqual:@"Double Tap"]) {
@@ -91,7 +91,8 @@
 
 #pragma mark - AVAudioPlayerDelegate
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag {
-    [self _sendMarker:@"Track End" value:[NSDate date]];
+    [self _sendMarker:@"Track End"];
+    [[AppService sharedInstance] newTrackData];
     [[NSNotificationCenter defaultCenter] postNotificationName:kNextScreenNotification object:self];
 }
 
@@ -140,7 +141,7 @@
     if (_currentTime >= _maxTime) {
         if ([_screenData[CProgressType] isEqualToString:@"Baseline"]) {
             // Send marker end baseline
-            [self _sendMarker:@"Baseline End" value:[NSDate date]];
+            [self _sendMarker:@"Baseline End"];
         }
         [_timer invalidate];
         [self.progressbar setHidden:YES];
@@ -171,6 +172,16 @@
 // Send marker
 - (void)_sendMarker:(NSString*)message value:(id)value {
     [[AppService sharedInstance] addMarkerToTrackData:message value:value];
+}
+
+- (void)_sendMarker:(NSString*)message {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    NSString *formatString = @"yyyy-MM-dd HH:mm:ss.SSSS";
+    [formatter setDateFormat:formatString];
+    
+    NSString* date = [formatter stringFromDate:[NSDate date]];
+    
+    [[AppService sharedInstance] addMarkerToTrackData:message value:date];
 }
 
 

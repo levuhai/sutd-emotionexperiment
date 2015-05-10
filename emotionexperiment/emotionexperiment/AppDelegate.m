@@ -21,6 +21,8 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    [self.window setCollectionBehavior:NSWindowCollectionBehaviorFullScreenPrimary];
+    //[self.window toggleFullScreen:nil];
     // Load screen data
     _screens = [[AppService sharedInstance] screenData];
     
@@ -38,18 +40,21 @@
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
+    [NSApp terminate:self];
+}
+
+- (void)windowWillClose:(NSNotification *)aNotification {
+    [NSApp terminate:self];
 }
 
 #pragma mark - Notification
 - (void)nextScreenNotification:(NSNotification*)notif {
     AppService *as = [AppService sharedInstance];
     _currentScreenIndex++;
-    if ([_screens[as.currentScreenIndex][CType] isEqualToString:@"Rating"] && ![_screens[_currentScreenIndex][CType] isEqualToString:@"Rating"]) {
-        [as newTrackData];
-    }
     as.currentScreenIndex = _currentScreenIndex;
     if (_currentScreenIndex >= _screens.count) {
         [as saveTrackDatas];
+        [[NSApplication sharedApplication] terminate:self];
     } else {
         [self _transitionToNextViewController];
     }
