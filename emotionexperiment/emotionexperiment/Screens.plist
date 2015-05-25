@@ -336,6 +336,8 @@
 		</dict>
 		<key>Progress Type</key>
 		<string>Time</string>
+		<key>Double Tap</key>
+		<true/>
 		<key>Interval</key>
 		<string>60</string>
 		<key>Sub Text</key>

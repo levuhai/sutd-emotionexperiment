@@ -64,8 +64,9 @@
     NSString* progressType = _screenData[CProgressType];
     if([progressType isEqual:@"Time"]) {
         [self _setupTimeScreen];
-        _doubleTapEnabled = YES;
-        
+        if ([_screenData[@"Double Tap"] boolValue] == YES) {
+            _doubleTapEnabled = YES;
+        }
     } else if([progressType isEqual:@"Baseline"]) {
          // Send marker start baseline
         [self _sendMarker:@"Baseline Start"];
