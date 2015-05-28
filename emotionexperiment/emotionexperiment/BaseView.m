@@ -169,6 +169,10 @@
             NSNumber *value = [NSNumber numberWithFloat:self.rating.floatValue];
             [self _sendMarker:_screenData[CMainText][@"Short"] value:value];
         }
+        if ([_screenData[CType] isEqualToString:@"Break"]) {
+            [_timer invalidate];
+            [self.progressbar setHidden:YES];
+        }
         [[NSNotificationCenter defaultCenter] postNotificationName:kNextScreenNotification object:self];
     }
 }
