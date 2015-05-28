@@ -335,9 +335,7 @@
 			<string>Take a short break to rest. Please do not remove any of the sensors</string>
 		</dict>
 		<key>Progress Type</key>
-		<string>Time</string>
-		<key>Double Tap</key>
-		<true/>
+		<string>Break</string>
 		<key>Interval</key>
 		<string>60</string>
 		<key>Sub Text</key>
