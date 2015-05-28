@@ -169,7 +169,7 @@
             NSNumber *value = [NSNumber numberWithFloat:self.rating.floatValue];
             [self _sendMarker:_screenData[CMainText][@"Short"] value:value];
         }
-        if ([_screenData[CType] isEqualToString:@"Break"]) {
+        if ([_screenData[CProgressType] isEqualToString:@"Break"]) {
             [_timer invalidate];
             [self.progressbar setHidden:YES];
         }
