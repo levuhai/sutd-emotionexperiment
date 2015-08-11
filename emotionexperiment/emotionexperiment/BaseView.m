@@ -86,10 +86,10 @@
     // Check if should hide progress bar
     BOOL progressHidden = [_screenData[@"Progress Hidden"] boolValue];
     [self.progressbar setHidden:progressHidden];
-    if ([progressType isEqual:@"Track"]) {
-        [self.timeText setHidden:YES];
-    } else
+    if ([progressType isEqual:@"Break"]) {
         [self.timeText setHidden:progressHidden];
+    } else
+        [self.timeText setHidden:NO];
     
     // NSVIEW BG COLOR
     CALayer *viewLayer = [CALayer layer];
