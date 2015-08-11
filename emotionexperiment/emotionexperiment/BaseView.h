@@ -36,6 +36,7 @@ typedef NSUInteger EEState;
 
 @property (strong) IBOutlet NSTextField *mainText;
 @property (strong) IBOutlet NSTextField *subText;
+@property (strong) IBOutlet NSTextField *timeText;
 @property (strong) IBOutlet ProgressView *progressbar;
 @property (strong) IBOutlet NSSlider *rating;
 

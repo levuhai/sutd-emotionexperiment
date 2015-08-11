@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7702"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
@@ -11,6 +11,7 @@
                 <outlet property="mainText" destination="byy-Ky-SsU" id="lPh-6p-ZQy"/>
                 <outlet property="progressbar" destination="umG-PR-t9r" id="zo4-by-xd3"/>
                 <outlet property="subText" destination="31l-d8-8uZ" id="r96-pe-Ez5"/>
+                <outlet property="timeText" destination="jto-Rr-71q" id="Fjw-Bu-mZG"/>
                 <outlet property="view" destination="XYu-qO-gQI" id="AVX-b3-Wli"/>
             </connections>
         </customObject>
@@ -42,14 +43,24 @@
                         <constraint firstAttribute="height" constant="10" id="wMx-b9-dVM"/>
                     </constraints>
                 </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jto-Rr-71q">
+                    <rect key="frame" x="422" y="20" width="38" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="Qa5-5C-Ang">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
             </subviews>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="umG-PR-t9r" secondAttribute="trailing" id="BvB-zp-yLo"/>
                 <constraint firstItem="byy-Ky-SsU" firstAttribute="leading" secondItem="XYu-qO-gQI" secondAttribute="leading" constant="100" id="HdN-Cc-W8u"/>
                 <constraint firstAttribute="trailing" secondItem="byy-Ky-SsU" secondAttribute="trailing" constant="100" id="IPb-2o-wiF"/>
+                <constraint firstAttribute="trailing" secondItem="jto-Rr-71q" secondAttribute="trailing" constant="22" id="PqB-cR-0ig"/>
                 <constraint firstItem="umG-PR-t9r" firstAttribute="top" secondItem="XYu-qO-gQI" secondAttribute="top" id="ULt-ab-78h"/>
                 <constraint firstItem="umG-PR-t9r" firstAttribute="leading" secondItem="XYu-qO-gQI" secondAttribute="leading" id="WWh-oP-y7m"/>
                 <constraint firstAttribute="centerX" secondItem="byy-Ky-SsU" secondAttribute="centerX" id="bx1-c6-lhm"/>
+                <constraint firstAttribute="bottom" secondItem="jto-Rr-71q" secondAttribute="bottom" constant="20" id="g5r-3g-5kZ"/>
                 <constraint firstAttribute="centerY" secondItem="31l-d8-8uZ" secondAttribute="centerY" multiplier="0.6" id="iuz-Mu-MQI"/>
                 <constraint firstAttribute="centerY" secondItem="byy-Ky-SsU" secondAttribute="centerY" multiplier="1.4" id="k2e-0i-xHv"/>
                 <constraint firstAttribute="centerX" secondItem="31l-d8-8uZ" secondAttribute="centerX" id="nHN-ck-QQR"/>

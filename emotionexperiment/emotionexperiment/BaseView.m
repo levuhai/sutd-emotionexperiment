@@ -35,6 +35,7 @@
     _screenData = as.screenData[as.currentScreenIndex];
     
     [self.progressbar setHidden:YES];
+    [self.timeText setHidden:YES];
     _doubleTapEnabled = NO;
     
     // SETUP TEXT
@@ -85,6 +86,10 @@
     // Check if should hide progress bar
     BOOL progressHidden = [_screenData[@"Progress Hidden"] boolValue];
     [self.progressbar setHidden:progressHidden];
+    if ([progressType isEqual:@"Track"]) {
+        [self.timeText setHidden:YES];
+    } else
+        [self.timeText setHidden:progressHidden];
     
     // NSVIEW BG COLOR
     CALayer *viewLayer = [CALayer layer];
@@ -106,6 +111,7 @@
     _maxTime = [_screenData[CInterval] intValue];
     [self.progressbar setMaxValue:_maxTime];
     [self.progressbar setHidden:NO];
+    [self.timeText setHidden:NO];
     _currentTime = 0;
     
     _timer = [NSTimer scheduledTimerWithTimeInterval:(1/50.0)
@@ -122,6 +128,7 @@
     _maxTime = _player.duration;
     [self.progressbar setMaxValue:_maxTime];
     [self.progressbar setHidden:NO];
+    [self.timeText setHidden:YES];
     _currentTime = 0;
     
     _timer = [NSTimer scheduledTimerWithTimeInterval:(1/50.0)
@@ -141,6 +148,7 @@
     }
     
     _currentTime += 1/50.0;
+    [self.timeText setStringValue:[NSString stringWithFormat:@"%.0f",_maxTime-_currentTime]];
     [self.progressbar setValue:_currentTime];
     if (_currentTime >= _maxTime) {
         if ([_screenData[CProgressType] isEqualToString:@"Baseline"]) {
@@ -149,6 +157,7 @@
         }
         [_timer invalidate];
         [self.progressbar setHidden:YES];
+        [self.timeText setHidden:YES];
         [[NSNotificationCenter defaultCenter] postNotificationName:kNextScreenNotification object:self];
     }
 }
@@ -161,6 +170,7 @@
     
     _currentTime = _player.currentTime;
     [self.progressbar setValue:_currentTime];
+    [self.timeText setStringValue:[NSString stringWithFormat:@"%.0f",_maxTime-_currentTime]];
 }
 
 - (void)doubleClick:(NSEvent *)event {
@@ -172,6 +182,7 @@
         if ([_screenData[CProgressType] isEqualToString:@"Break"]) {
             [_timer invalidate];
             [self.progressbar setHidden:YES];
+            [self.timeText setHidden:YES];
         }
         [[NSNotificationCenter defaultCenter] postNotificationName:kNextScreenNotification object:self];
     }

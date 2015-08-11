@@ -57,7 +57,7 @@
 			<string>Please relax and look at the cross in the screen. Try not to move while we are recording your baseline for 2 minutes</string>
 		</dict>
 		<key>Progress Hidden</key>
-		<true/>
+		<false/>
 		<key>Progress Type</key>
 		<string>Time</string>
 		<key>Type</key>
